@@ -5,6 +5,10 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<style type="text/css">
 		@font-face {
+			font-family: anglia;
+			src: url('Anglia Script Standard.ttf') format("truetype");
+		}
+		@font-face {
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
@@ -19,58 +23,37 @@
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				<div class="keyword space">亲爱的小鹿: </div><br/>
+				<span class="comments">
+					缘分有时候就是一件很神奇的事情. <br/>
+					2018.8.22，我们结识于soul这个神奇的软件. <br/>
+					午睡前不经意间的一次匹配，将你指引给了我,自此我们都不再是一个人. <br/>
+					虽然我有时候会担心不知道该如何维系这段感情,但是我们似乎总会有说不完的话，诉不完的情，就好像是被施了魔法一样,其实我明白这都是我们共同努力的结果,它是来之不易的，也更让人想要去珍惜. <br/>
+					时间是匆匆流逝,最不容易抓住的,但正是由于它的难以捉摸,我们反而会更想要去抓住这虚无缥缈的时间,因为它能时刻提醒自己,原来你已经陪伴了我这么久,原来我们之间已经留下了这么多美好的回忆. <br/>
+					就像你希望我们种下的缘分之树一样,它的郁郁葱葱与时间刻画出的年轮会让树变得越来越健壮,也意味着我们之间的关系会越来越亲密. <br/>
+					我也希望这个页面变化着的每分每秒,我都在想你...
+				</span>
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						<div id="anglia">Dear xiaolu, we have been together for</div>
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						<div class="signature" id="anglia">-VitaHeng</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
+		together.setFullYear(2018, 7, 22);
+		together.setHours(13);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
